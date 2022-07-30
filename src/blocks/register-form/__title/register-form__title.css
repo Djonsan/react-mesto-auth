@@ -1,4 +1,4 @@
-.login__title {
+.register-form__title {
     text-align: center;
     font-weight: 900;
     font-size: 24px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .login__title {
+  .register-form__title {
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 27px;

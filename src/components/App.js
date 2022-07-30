@@ -15,7 +15,6 @@ import InfoTooltip from './InfoTooltip';
 import { Route, Switch, Redirect, useHistory } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 import * as auth from '../utils/auth';
-import { func } from "prop-types";
 
 function App() {
 

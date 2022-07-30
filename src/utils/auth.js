@@ -1,5 +1,12 @@
 export const baseUrl = "https://auth.nomoreparties.co";
 
+function checkResponse (res) {
+  if(res.ok) {
+    return res.json();
+  }
+  return Promise.reject(`Ошибка ${res.status}`);
+}
+
 export const register = (email, password) => {
   return fetch(`${baseUrl}/signup`, {
     method: 'POST',
@@ -12,11 +19,9 @@ export const register = (email, password) => {
       password,
     })
   })
-  .then(res => {
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(`Ошибка: ${res.status}`);
+  .then((res) => {
+    console.log(res);
+    return checkResponse(res);
   })
 };
 
@@ -29,11 +34,8 @@ export const login = (email, password) => {
     },
     body: JSON.stringify({ email, password })
   })
-  .then(res => {
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(`Ошибка: ${res.status}`);
+  .then((res) => {
+    return checkResponse(res);
   })
 };
 

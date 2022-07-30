@@ -9,7 +9,7 @@ function Header({ email, onSignOut, loggedIn }) {
 
   //* Проверка ширины окна просмотра, если больше 767 то бургер-меню считается открытым. 
   //* Без контроля ширины окна просмотра, если в мобильной версии закрыть бургер меню и развернуть большой экран, то поле имейла и кнопка имеют display: none;
-  let resizeWindow = useCallback(() => {
+  const resizeWindow = useCallback(() => {
     setWindowWidth(window.innerWidth);
     if (windowWidth >= 767) {
       setIsClicked(true);

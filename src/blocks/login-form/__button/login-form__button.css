@@ -1,4 +1,4 @@
-.register__button {
+.login-form__button {
     width: 100%;
     padding: 14px 0px;
     font-weight: 400;
@@ -7,13 +7,13 @@
     transition: all 0.1s linear;
 }
 
-.register__button:hover {
+.login-form__button:hover {
     cursor: pointer;
     opacity: 0.85;
 }
 
 @media screen and (max-width: 767px) {
-  .register__button {
+  .login-form__button {
     font-size: 16px;
     line-height: 20px;
   }

@@ -1,4 +1,4 @@
-.login__email-input {
+.login-form__email-input {
   background-color: transparent;
   color: #fff;
   border: 0;
@@ -10,6 +10,6 @@
   line-height: 17px;
 }
 
-.login__email-input::placeholder {
+.login-form__email-input::placeholder {
   color: #ccc;
 }
