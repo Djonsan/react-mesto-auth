@@ -24,7 +24,7 @@ export default function Register({ onRegister }) {
   }
 
   return (
-    <form className="register-form" onSubmit={handleSubmit}>
+    <form className="register-form" name="register-form" onSubmit={handleSubmit}>
       <h1 className="register-form__title">Регистрация</h1>
       <input autoComplete="on" className="register-form__email-input" placeholder="Email" id="email" name="email" type="email" value={profileData.email} onChange={handleChange} minLength="2" maxLength="40" required />
       <input autoComplete="on" className="register-form__password-input" placeholder="Пароль" id="password" name="password" type="password" value={profileData.password} onChange={handleChange} minLength="2" maxLength="40" required />

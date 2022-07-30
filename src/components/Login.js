@@ -27,7 +27,7 @@ export default function Login({ onLogin }) {
   }
 
   return (
-    <form className="login-form" onSubmit={handleSubmit}>
+    <form className="login-form" name="login-form" onSubmit={handleSubmit}>
       <h1 className="login-form__title">Вход</h1>
       <input autoComplete="on" className="login-form__email-input" placeholder="Email" id="email" name="email" type="email" value={profileData.email} onChange={handleChange} minLength="2" maxLength="40" required />
       <input autoComplete="on" className="login-form__password-input" placeholder="Пароль" id="password" name="password" type="password" value={profileData.password} onChange={handleChange} minLength="2" maxLength="40" required />
